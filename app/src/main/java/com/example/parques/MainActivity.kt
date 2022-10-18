@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         val TAG="info"
 
         binding.btSave.setOnClickListener {
-            Log.d(TAG, "El parque es ${binding.name.text}")
+       /*     Log.d(TAG, "El parque es ${binding.name.text}")
             Log.d(TAG, "Su descripción: ${binding.description.text}")
             Log.d(TAG, "Télefono: ${binding.phone.text}")
             Log.d(TAG, "Página Web: ${binding.website.text}")
@@ -30,8 +30,11 @@ class MainActivity : AppCompatActivity() {
             }
             if(binding.CbRestaurant.isChecked){
                 Log.d(TAG, "El parque cuenta con restaurante")
-            }
+            }*/
+            val miDialogo = MiDialogFragment()
+            miDialogo.show(supportFragmentManager,"MiDialogo")
         }
+
 
 
     }
